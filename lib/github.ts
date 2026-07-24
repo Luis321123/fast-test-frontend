@@ -56,8 +56,7 @@ function mapApiToGitHubUser(apiData: ApiGitHubUser): GitHubUser {
 }
 
 const API_URL =
-  process.env.NEXT_PUBLIC_API_URL ||
-  'https://fast-test-backend-production.up.railway.app';
+  process.env.NEXT_PUBLIC_API_URL
 
 export async function getGitHubUser(
   username: string,
